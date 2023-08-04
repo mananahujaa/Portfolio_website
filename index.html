@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manan Ahuja - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        body {
+            background-color: #437fc7;
+            color: #ffffff;
+        }
+
+        /*
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #6daffe;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.02 rem;
+            color: lavender;
+        }
+    */
+        /* General styles for the navbar */
+        nav {
+            background-color: #6daffe;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(255, 35, 35, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: right;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 50px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            
+        }
+
+        /* Hover effect */
+        nav ul li a:hover {
+
+            color: rgb(166, 79, 207);
+            transform: scale(1.05);
+        }
+
+        /* Active link style (optional) */
+        nav ul li a.active {
+            background-color: lavender;
+            color: #333333;
+        }
+
+        /* Add media query to adjust on smaller screens */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+            nav ul li {
+                margin: 5px;
+            }
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+            height: 15vw;
+            width: 100vw;
+
+        }
+
+        .firstSection div {
+            width: 70%;
+        
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 30px 0;
+            margin-left: 5%;
+
+        }
+        .leftSection .btn{
+            background-color: rgb(174, 70, 174);
+            color: wheat;
+            border: 2px solid wheat;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 4px;
+
+        }
+
+        .rightSection img {
+            width: 100%;
+
+        }
+
+        .purple {
+            color: blueviolet;
+
+        }
+
+        #element {
+            color: aqua;
+
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 130vh;
+            margin-left: 5%;
+
+
+        }
+
+        .secondSection h1 {
+            font-size: 2rem;
+            color: turquoise;
+        }
+
+        .secondSection h2 {
+            font-size: 0.75rem;
+            color: peachpuff;
+        }
+
+        .secondSection h3 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            color: rgb(238, 152, 136);
+        }
+
+        .secondSection h4 {
+            font-size: 0.6rem;
+            color: burlywood;
+        }
+
+        .secondSection h5 {
+            font-size: 0.4rem;
+            color: lemonchiffon;
+        }
+
+
+        .text-yg {
+            color: yellowgreen;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 86vw;
+            height: 2px;
+            margin: 78px 23px;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+
+        }
+
+        .image-top {
+            position: relative;
+            top: -59px;
+            left: -50px;
+            width: 98px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 250px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 89px;
+            width: 150px;
+        }
+
+        footer {
+            background-color: skyblue;
+            height: auto;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            height: 123px;
+        }
+        .footer ul li{
+            list-style: none;
+
+        }
+
+        .FooterSecond {
+            margin-left: 80%;
+            justify-content: space-evenly;
+        }
+        .FooterFirst {
+            margin-left: 5%;
+
+        }
+        
+
+        .footer > div{
+            width: 123px;
+        }
+        footer .Footer-rights{
+            text-align: center; 
+            color: gray;
+            padding: 12px;
+        }
+        
+        @media screen and (max-width: 300px) {
+            body{
+                background-color: red;
+            }
+            .box{
+                flex-direction: column;
+            }
+            
+            .firstSection {
+                flex-direction: column-reverse ;
+            }
+            .secondSection .vertical{
+                height: unset;
+        
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Manan's Portfolio</div>
+
+            <div class="right"></div>
+            <ul>
+                <a href="/">
+                    <li>Home
+                </a></li>
+                <a href="/">
+                    <li>About
+                </a></li>
+                <!--<a href="/">
+                    <li>Services
+                </a></li>
+                <a href="/">
+                    <li>Portfolio
+                </a></li>-->
+                <a href="/">
+                    <li>Contact me
+                </a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,
+                My name is <span class="purple">Manan</span>
+                <div>and I am a passionate</div>
+                <!--<div>Computer Science Engineer! </div>-->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume!</div>
+                    <button class="btn">Visit Github</div>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="/Assets/bg1.png" alt="bg">
+
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-yg"> What have I done so far?</span>
+            <h1>Work Experience </h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Assets/victora.jpeg" alt="">
+                    <div class="vertical-title">
+                        <h3>IT Intern </h3>
+                        <h2>(April 2021- August 2021)</h2>
+                    </div>
+                    <div class="vertical-desc">
+                        <h4>Victora Auto Pvt Ltd</h4>
+                        <h5>• Created and implemented company specific and SAP codes to perform ERP functions that
+                            generate billings, inventories, and 50+ sales orders</h5>
+                        <h5>• Established contact with 250+ potential customers for RFQs and maintained thorough
+                            communication with the development team for prototype and resource planning</h5>
+                        <h5>• Assisted marketing and technical VPs in regular updates about the company’s operations and
+                            site/client visits for potential problems, and orders</h5>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Assets/elite.png" alt="">
+                    <div class="vertical-title">
+                        <h3>Systems Engineering Intern</h3>
+                        <h2>(June 2022- August 2022)</h2>
+                    </div>
+                    <div class="vertical-desc">
+                        <h4>Elite Quad Core Solutions LLC</h4>
+                        <h5>• Configured 5+ firewalls on Cisco products using Palo Alto Networks and implemented
+                            company-specific SSL decryption policies to ensure secure network access for clients.</h5>
+                        <h5>• Provided technical support to the company's biggest client by designing and coding a
+                            customized SSL decryption policy for a two-ethernet port firewall setup on the Palo Alto
+                            Networks portal using set and Linux on a Cisco Meraki 801.</h5>
+                        <h5>• Streamlined data processing and analysis by combining data from multiple systems and
+                            generating analytical, production, and quality reports in the appropriate format, showcasing
+                            strong data management and reporting skills.</h5>
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="Assets/mphasis.webp" alt="">
+                    <div class="vertical-title">
+                        <h3>Software Engineering Intern</h3>
+                        <h2>(June 2023- July 2023)</h2>
+                    </div>
+                    <div class="vertical-desc">
+                        <h4>Mphasis Limited</h4>
+                        <h5>• As a Software Engineering Intern at Mphasis Limited, successfully deployed complex
+                            applications utilizing technologies such as Kubernetes, Docker, AWS EC2 instances, and CI/CD
+                            servers, ensuring seamless deployment and efficient container orchestration.</h5>
+                        <h5>• Demonstrated expertise in managing network services with host IP allocation through Proxy
+                            on AWS EC2 and Route53, resulting in significant downtime reduction and improved production
+                            environment stability</h5>
+                        <h5>• Collaborated with teams to implement CI/CD pipelines, enabling continuous integration and
+                            deployment, while also contributing to the development and deployment of a Reddit clone,
+                            showcasing strong skills in container management and network optimization.</h5>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Assets/Ozark Labs JPG.jpg" alt="">
+                    <div class="vertical-title">
+                        <h3>Founder</h3>
+                        <h2>(June 2023)</h2>
+                    </div>
+                    <div class="vertical-desc">
+                        <h4>Ozark Labs India</h4>
+                        <h5>• As the founder, I spearheaded initial projects, assembling freelancers, and ultimately
+                            recruited a manager and marketer to drive revenue growth.</h5>
+                        <h5>• Pioneering this consultancy, I led project development, assembled a freelance team, and
+                            secured a manager and marketer for sustainable revenue.</h5>
+                        <h5>• Taking charge as founder, I developed projects, formed a freelance team, and strategically
+                            hired a manager and marketer, yielding profitable results.</h5>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="FooterFirst">
+                <h3>Manan's Portfolio Website</h3>
+            </div>
+
+            <div class="FooterSecond">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+
+            </div>
+            <div class="FooterThird"></div>
+
+        </div>
+        <div class="Footer-rights">
+            www.MananAhuja.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Computer Science Engineer.', 'Web Developer.', 'DevOps Engineer.', 'Web Designer.', 'Full-Stack Engineer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
